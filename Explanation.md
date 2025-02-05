@@ -199,7 +199,7 @@
         Therefore, the overall time complexity is **$O(n)$**.
 
     - ### Space Complexity:
-        - **String Conversion**: For python, we convert the strings `s1` and `s2` into lists, which requires **$O(n)$** space where `n` is the length of the strings.
+        - **String Conversion**: For python, we convert the strings `s1` and `s2` into lists, which requires **$O(n)$** space where $n$ is the length of the strings.
         - **Other Variables**: The variables `left`, `right`, and `n` are all constant space usage, i.e., **$O(1)$**.
         
         Overall, the space complexity is **$O(n)$** due to the list conversions for Python, and **$O(1)$** for C++.
