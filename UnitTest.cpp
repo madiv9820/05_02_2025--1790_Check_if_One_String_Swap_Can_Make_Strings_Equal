@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "Solution.hpp"
 
 class UnitTest {
@@ -17,6 +18,7 @@ public:
                      {{"ab", "cd"}, false},
                      {{"ab", "ac"}, false},
                      {{"ab", "bc"}, false}};
+    }
 
     void test() {
         for(auto &testcase : testcases) {
@@ -26,8 +28,8 @@ public:
             if (actual != expected) {
                 std::cout << "Test failed!" << std::endl;
                 std::cout << "Input: " << input.first << ", " << input.second << std::endl;
-                std::cout << "Expected: " << expected << std::endl;
-                std::cout << "Actual: " << actual << std::endl;
+                std::cout << "Expected: " << (expected ? "true":"false") << std::endl;
+                std::cout << "Actual: " << (actual ? "true":"false") << std::endl;
                 return;
             }
         }
@@ -35,3 +37,9 @@ public:
 
     }
 };
+
+int main() {
+    UnitTest test;
+    test.test();
+    return 0;
+}
